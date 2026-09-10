@@ -14,7 +14,7 @@ Kelompok 5
 | 5 | Arinta Kalyca Atinnaputri | 2210312026 | Testing & Documentation |
 ---
 ## 2. Project Title
-- Simple ATM Simulator 
+- SIMPLE ATM SIMULATOR
 ---
 ## 3. Project Description
 - This program is a simple ATM simulator in which the user can check their balance, deposit money, withdraw money, and exit the program. 
