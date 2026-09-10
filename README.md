@@ -1,23 +1,22 @@
 Kelompok 5
 # Mini Programming Project
 ## 1. Group Information
-**Class:** A/B/C/D
-**Group:** 1
+**Class:** A
+**Group:** 5
 ### Group Members
 | No. | Name | Student ID | Role |
 |---|---|---|---|
-| 1 | Student 1 | XXXXX | Project Coordinator |
-| 2 | Student 2 | XXXXX | Algorithm |
-| 3 | Student 3 | XXXXX | Flowchart |
-| 4 | Student 4 | XXXXX | JavaScript |
-| 5 | Student 5 | XXXXX | Testing & Documentation |
+| 1 | Attaya N.K | 2610312016 | Project Coordinator |
+| 2 | Salwa Z. | 2610312015 | Algorithm |
+| 3 | Felicia G.Z.U | XXXXX | Flowchart |
+| 4 | Attharya A. | 2610312001 | JavaScript |
+| 5 | Arinta K.A | 2210312026 | Testing & Documentation |
 ---
 ## 2. Project Title
-Number Guessing Game
+Simple ATM Simulator
 ---
 ## 3. Project Description
-This program is a simple game in which the player must guess a number
-determined by the computer.
+This program is a simple ATM simulator in which the user can check their balance, deposit money, withdraw money, and exit the program.
 ---
 ## 4. Objectives
 This project is designed to apply the following programming concepts:
