@@ -2,6 +2,7 @@ Kelompok 5
 # Mini Programming Project
 ## 1. Group Information
 **Class:** A
+
 **Group:** 5
 ### Group Members
 | No. | Name | Student ID | Role |
