@@ -13,10 +13,10 @@ Kelompok 5
 | 5 | Arinta K.A | 2210312026 | Testing & Documentation |
 ---
 ## 2. Project Title
-Simple ATM Simulator
+- Simple ATM Simulator -
 ---
 ## 3. Project Description
-This program is a simple ATM simulator in which the user can check their balance, deposit money, withdraw money, and exit the program.
+- This program is a simple ATM simulator in which the user can check their balance, deposit money, withdraw money, and exit the program. -
 ---
 ## 4. Objectives
 This project is designed to apply the following programming concepts:
