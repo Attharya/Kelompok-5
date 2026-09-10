@@ -6,11 +6,11 @@ Kelompok 5
 ### Group Members
 | No. | Name | Student ID | Role |
 |---|---|---|---|
-| 1 | Attaya N.K | 2610312016 | Project Coordinator |
-| 2 | Salwa Z. | 2610312015 | Algorithm |
-| 3 | Felicia G.Z.U | 2610312012 | Flowchart |
-| 4 | Attharya A. | 2610312001 | JavaScript |
-| 5 | Arinta K.A | 2210312026 | Testing & Documentation |
+| 1 | Attaya Naufal Keandra| 2610312016 | Project Coordinator |
+| 2 | Salwa Zalfa Mufidah | 2610312015 | Algorithm |
+| 3 | Felicia Grace Zefanya Usmany | 2610312012 | Flowchart |
+| 4 | Attharya Abimanyu | 2610312001 | JavaScript |
+| 5 | Arinta Kalyca Atinnaputri | 2210312026 | Testing & Documentation |
 ---
 ## 2. Project Title
 - Simple ATM Simulator 
