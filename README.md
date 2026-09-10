@@ -8,7 +8,7 @@ Kelompok 5
 |---|---|---|---|
 | 1 | Attaya N.K | 2610312016 | Project Coordinator |
 | 2 | Salwa Z. | 2610312015 | Algorithm |
-| 3 | Felicia G.Z.U | XXXXX | Flowchart |
+| 3 | Felicia G.Z.U | 2610312012 | Flowchart |
 | 4 | Attharya A. | 2610312001 | JavaScript |
 | 5 | Arinta K.A | 2210312026 | Testing & Documentation |
 ---
