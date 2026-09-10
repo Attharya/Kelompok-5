@@ -20,13 +20,13 @@ Kelompok 5
 ---
 ## 4. Objectives
 This project is designed to apply the following programming concepts:
-- Variables
-- Data types
-- Operators
-- Conditional statements
-- Loops
-- Algorithms
-- JavaScript
+- **Language:** JavaScript
+- **Variables & Data Types:** `Number` (balance calculations), `Boolean` (loop control), `String` (messages)
+- **Operators:** Arithmetic (`+`, `-`), Comparison (`>`, `<=`), and Logical (`||`)
+- **Conditional Statements:** `switch` statements for main menu routing and `if/else` for withdrawal validation checks
+- **Loops:** `while` loop for continuous interactive program runtime
+- **Algorithms:** Input validation, transaction verification, and sequential step logic
+
 ---
 ## 5. Input
 The program receives:
