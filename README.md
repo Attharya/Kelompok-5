@@ -21,33 +21,66 @@ Kelompok 5
 ---
 ## 4. Objectives
 This project is designed to apply the following programming concepts:
-- **Language:** JavaScript
-- **Variables & Data Types:** `Number` (balance calculations), `Boolean` (loop control), `String` (messages)
-- **Operators:** Arithmetic (`+`, `-`), Comparison (`>`, `<=`), and Logical (`||`)
-- **Conditional Statements:** `switch` statements for main menu routing and `if/else` for withdrawal validation checks
-- **Loops:** `while` loop for continuous interactive program runtime
-- **Algorithms:** Input validation, transaction verification, and sequential step logic
-
+- **Language:** JavaScript (Node.js runtime environment)
+- **Built-in Modules:** `readline` module for standard input/output handling
+- **Variables & Scope:** State management using dynamic variable assignment (`let saldo`)
+- **Data Types:** 
+  - `Number` for financial amounts and balance calculations
+  - `String` for user choice handling and formatted outputs
+- **Operators:**
+  - **Arithmetic:** `+` and `-` for updating account balances
+  - **Comparison:** `<=`, `>`, `===`, and `!==` for input validation and branching logic
+  - **Logical:** `||` for multi-condition input checks
+- **Conditional Statements:** `switch` block for menu routing and `if/else` checks for transaction limits
+- **Algorithms & Methods:**
+  - `Intl.NumberFormat` for standard IDR currency formatting
+  - `isNaN()` and mathematical comparison for input integrity verification
+  - Asynchronous recursive functions (`menu()`, `keluar()`) for program loop management
 ---
 ## 5. Input
 The program receives:
-- The player's guess
-- The number of attempts
+- **Menu Selection:** Option `1`, `2`, `3`, or `4` chosen by the user.
+- **Setoran (Deposit):** Numeric monetary value to add to balance.
+- **Penarikan (Withdrawal):** Numeric monetary value to deduct from balance.
+- **Navigation Choice:** Option `1` (Return to Menu) or `2` (Exit) post-transaction.
 ---
 ## 6. Process
-The program compares the player's guess with the target number.
-If the guess is:
-- Too high → the program provides a "too high" message
-- Too low → the program provides a "too low" message
-- Correct → the player wins
+**The program processes user actions using conditional structures and balance tracking logic.
+If the menu choice is:**
+- **Option 1 (Cek Saldo)** → the program formats and displays the current account balance
+- **Option 2 (Setor Uang)** → the program checks if the deposit amount is greater than 0:
+  - Valid amount → the program adds the setoran to the balance (`saldo + jumlah`) and updates the total
+  - Invalid amount ($\le 0$ or non-numeric) → the program displays a "Jumlah setoran tidak valid!" message
+- **Option 3 (Tarik Uang)** → the program verifies the withdrawal amount:
+  - Valid amount ($\le \text{saldo}$) → the program deducts the penarikan from the balance (`saldo - jumlah`)
+  - Exceeds balance ($\text{jumlah} > \text{saldo}$) → the program displays a "Saldo tidak mencukupi!" message
+  - Invalid amount ($\le 0$ or non-numeric) → the program displays a "Jumlah penarikan tidak valid!" message
+- **Option 4 (Keluar)** → the program terminates the application session
+- **Invalid Option** → the program displays a "Pilihan tidak tersedia!" message
 ---
 ## 7. Output
-The program displays:
-- The result of each guess
-- Hints or feedback
-- The number of remaining attempts
-- The final game status (win/loss)
+**The program displays:**
+- The main ATM transaction menu
+- The current account balance formatted in Indonesian Rupiah (IDR)
+- Real-time transaction confirmation messages (**"SETORAN BERHASIL"*, *"PENARIKAN"**)
+- Error alerts and input validation feedback
+- Navigation options to return to the main menu or exit
+- The final account balance and card retrieval prompt upon completion
 ---
+## 🧪 Test Cases
+
+| Test Case | Scenario | Input | Expected Output | Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **TC-01** | Check Initial Balance | Option `1` | `Rp 1.000.000` | **PASS** |
+| **TC-02** | Valid Deposit | Option `2`, Deposit `500000` | Setoran Berhasil, Saldo terbaru: `Rp 1.500.000` | **PASS** |
+| **TC-03** | Valid Withdrawal | Option `3`, Withdrawal `200000` | Penarikan Berhasil, Sisa saldo: `Rp 1.300.000` | **PASS** |
+| **TC-04** | Insufficient Balance | Option `3`, Withdrawal `2000000` | `Saldo tidak mencukupi!` | **PASS** |
+| **TC-05** | Invalid Deposit (<= 0) | Option `2`, Deposit `0` | `Jumlah setoran tidak valid!` | **PASS** |
+| **TC-06** | Invalid Withdrawal (<= 0) | Option `3`, Withdrawal `0` | `Jumlah penarikan tidak valid!` | **PASS** |
+| **TC-07** | Invalid Menu Option | Option `5` | `Pilihan tidak tersedia!` | **PASS** |
+| **TC-08** | Exit Program | Option `4` | `TERIMA KASIH`, Final Balance summary | **PASS** |
+---
+
 ## 8. Algorithm
 The algorithm used in the program is described in:
 `pseudocode.txt`
