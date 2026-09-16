@@ -1,0 +1,62 @@
+	
+		ALGORITHM "SIMPLE ATM SIMULATOR"
+
+
+START
+
+    saldo awal ← 1000000
+
+    REPEAT
+
+        DISPLAY "===== MENU ATM ====="
+        DISPLAY "1. Cek Saldo"
+        DISPLAY "2. Setor Uang"
+        DISPLAY "3. Tarik Uang"
+        DISPLAY "4. Keluar"
+        DISPLAY "Pilih menu: "
+
+        INPUT pilihan
+
+        SWITCH pilihan
+
+            CASE 1:
+                DISPLAY "Saldo saat ini: ", saldo
+
+
+            CASE 2:
+                DISPLAY "Masukkan jumlah uang yang ingin disetor: "
+                INPUT setor
+
+                saldo ← saldo awal + setor
+
+                DISPLAY "Setoran berhasil."
+                DISPLAY "Saldo saat ini: ", saldo
+
+
+            CASE 3:
+                DISPLAY "Masukkan jumlah uang yang ingin ditarik: "
+                INPUT tarik
+
+                IF tarik <= saldo awal THEN
+                    saldo ← saldo awal - tarik
+
+                    DISPLAY "Penarikan berhasil."
+                    DISPLAY "Saldo saat ini: ", saldo
+                ELSE
+                    DISPLAY "Saldo tidak mencukupi."
+                END IF
+
+
+            CASE 4:
+                DISPLAY "Transaksi selesai."
+                DISPLAY "Saldo akhir: ", saldo
+            DEFAULT:
+                DISPLAY "Pilihan tidak valid."
+        END SWITCH
+
+    UNTIL pilihan = 4
+    DISPLAY "Terima kasih telah menggunakan ATM."
+END
+	
+	
+	
