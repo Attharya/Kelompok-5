@@ -56,7 +56,7 @@ If the menu choice is:**
   - Exceeds balance ($\text{jumlah} > \text{saldo}$) → the program displays a "Saldo tidak mencukupi!" message
   - Invalid amount ($\le 0$ or non-numeric) → the program displays a "Jumlah penarikan tidak valid!" message
 - **Option 4 (Keluar)** → the program terminates the application session
-- **Invalid Option** → the program displays a "Pilihan tidak tersedia!" message
+- **Invalid Option** → the program displays a "Pilihan tidak tersedia!" message.
 ---
 ## 7. Output
 **The program displays:**
