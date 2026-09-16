@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ATM_Flowchart"/>
+        <attribute name="authors" value="Priskila Georgina"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-10 09:24:26 PM"/>
+        <attribute name="created" value="UHJpc2tpbGEgR2VvcmdpbmE7TEFQVE9QLUM3OTkzSjhROzIwMjYtMDktMTA7MDg6MzA6MTkgUE07Mzk2Nw=="/>
+        <attribute name="edited" value="UHJpc2tpbGEgR2VvcmdpbmE7TEFQVE9QLUM3OTkzSjhROzIwMjYtMDktMTA7MDk6MjQ6MjYgUE07Mjs0MDc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saldo, pilihan, jumlah, lanjut" type="Integer" array="False" size=""/>
+            <assign variable="saldo" expression="1000000"/>
+            <assign variable="lanjut" expression="1"/>
+            <do expression="lanjut == 1">
+                <output expression="&quot;1. Cek saldo&quot;" newline="True"/>
+                <input variable="pilihan"/>
+                <if expression="pilihan == 1">
+                    <then>
+                        <output expression="&quot;Saldo saat ini: &quot; &amp; saldo" newline="True"/>
+                        <output expression="&quot;Lanjut (1) / Selesai (0)?&quot;" newline="True"/>
+                        <input variable="lanjut"/>
+                    </then>
+                    <else>
+                        <if expression="pilihan == 2">
+                            <then>
+                                <output expression="&quot;Masukkan jumlah setor:&quot;" newline="True"/>
+                                <input variable="jumlah"/>
+                                <if expression="jumlah &gt; 0">
+                                    <then>
+                                        <assign variable="saldo" expression="saldo + jumlah"/>
+                                        <output expression="&quot;Saldo saat ini: &quot; &amp; saldo" newline="True"/>
+                                        <output expression="&quot;Lanjut (10) / Selesai (0)?&quot;" newline="True"/>
+                                        <input variable="lanjut"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Error: Jumlah setor haris lebih dari 0&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="pilihan == 3">
+                                    <then>
+                                        <output expression="&quot;Masukkan jumlah tarik:&quot;" newline="True"/>
+                                        <input variable="jumlah"/>
+                                        <if expression="jumlah &gt; 0">
+                                            <then>
+                                                <if expression="jumlah &gt; saldo">
+                                                    <then>
+                                                        <output expression="&quot;Saldo tidak mencukupi!&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <assign variable="saldo" expression="saldo - jumlah"/>
+                                                        <output expression="&quot;Sisa saldo anda: &quot; &amp; saldo" newline="True"/>
+                                                        <output expression="&quot;Lanjut (1) / Selesai (0)?&quot;" newline="True"/>
+                                                        <input variable="lanjut"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Error: Jumlah tarik tidak valid!&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="pilihan == 4">
+                                            <then>
+                                                <assign variable="lanjut" expression="0"/>
+                                                <output expression="&quot;Terima kasih telah menggunakan ATM. Saldo akhi: &quot; &amp; saldo" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Pilihan tidak valid!&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
