@@ -91,7 +91,7 @@ File: `flowchart.fprg`
 ---
 ## 10. JavaScript Implementation
 The JavaScript implementation of the program is available in:
-(program.js) 
+[program.js](program.js) 
 ---
 ## 11. Testing
 The program is tested using several test scenarios.
