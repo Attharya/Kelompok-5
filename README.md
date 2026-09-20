@@ -17,6 +17,7 @@ Kelompok 5
 <p align="center">
   <img src="./header-banner.gif" alt="ATM Simulator Team 5 Banner" width="100%">
 </p>
+
 ## 2. Project Title
 - SIMPLE ATM SIMULATOR
 ---
