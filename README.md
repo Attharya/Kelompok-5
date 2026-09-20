@@ -14,6 +14,9 @@ Kelompok 5
 | 5 | Arinta Kalyca Atinnaputri | 2210312026 | Testing & Documentation |
 ---
 
+<p align="center">
+  <img src="./header-banner.gif" alt="ATM Simulator Team 5 Banner" width="100%">
+</p>
 ## 2. Project Title
 - SIMPLE ATM SIMULATOR
 ---
