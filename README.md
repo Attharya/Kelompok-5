@@ -14,7 +14,7 @@ Kelompok 5
 | 5 | Arinta Kalyca Atinnaputri | 2210312026 | Testing & Documentation |
 ---
 
-
+![Demo Running ATM](https://raw.githubusercontent.com/USERNAME/NAMA_REPO/main/nama-file.gif)
 
 ## 2. Project Title
 - SIMPLE ATM SIMULATOR
