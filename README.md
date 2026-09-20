@@ -14,7 +14,7 @@ Kelompok 5
 | 5 | Arinta Kalyca Atinnaputri | 2210312026 | Testing & Documentation |
 ---
 
-![image alt](https://github.com/Attharya/Kelompok-5/blob/33f69b584f19522787be2a9adf1db931773b52a5/Blue%20and%20White%20Simple%20Modern%20Banner%20Landscape.png)
+![Demo Running ATM](https://github.com/Attharya/Kelompok-5/blob/5fa5649720652f0ba2b5d93127cf3144bbb35aa6/gif%20file.gif)
 
 ## 2. Project Title
 - SIMPLE ATM SIMULATOR
