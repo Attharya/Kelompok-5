@@ -73,18 +73,7 @@ The program displays:
 * Final account balance and exit message upon completion
 ---
 
-## 🧪 Test Cases
-
-| Test Case | Scenario | Input | Expected Output | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **TC-01** | Check Initial Balance | Option `1` | `Saldo Anda: Rp 1000000` | **PASS** |
-| **TC-02** | Valid Deposit | Option `2`, Deposit `700000` | Setoran berhasil! Saldo sekarang: `Rp 1700000` | **PASS** |
-| **TC-03** | Valid Withdrawal | Option `3`, Withdrawal `200000` | Penarikan berhasil! Sisa saldo: `Rp 1500000` | **PASS** |
-| **TC-04** | Insufficient Balance | Option `3`, Withdrawal `2000000` | `Saldo tidak mencukupi!` | **PASS** |
-| **TC-05** | Invalid Deposit ($\le 0$) | Option `2`, Deposit `0` | `Jumlah setoran tidak valid!` | **PASS** |
-| **TC-06** | Invalid Withdrawal ($\le 0$) | Option `3`, Withdrawal `0` | `Jumlah penarikan tidak valid!` | **PASS** |
-| **TC-07** | Invalid Menu Option | Option `5` | `Pilihan tidak tersedia!` | **PASS** |
-| **TC-08** | Exit Program | Option `4` | Terima kasih! Saldo akhir Anda: `Rp 1500000` | **PASS** |
+![Demo Running](https://github.com/Attharya/Kelompok-5/blob/b446633d49370e470ec727100f0d50b2c049ac42/GIF%202.gif)
 
 ---
 
