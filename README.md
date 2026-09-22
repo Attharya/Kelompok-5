@@ -73,7 +73,7 @@ The program displays:
 * Final account balance and exit message upon completion
 ---
 
-![Demo Running](https://github.com/Attharya/Kelompok-5/blob/b446633d49370e470ec727100f0d50b2c049ac42/GIF%202.gif)
+![Demo Running](
 
 ---
 
