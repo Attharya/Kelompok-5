@@ -4,58 +4,71 @@
 
 START
 
-    saldo awal ← 1000000
+    saldo ← 1000000
 
     REPEAT
 
-        DISPLAY "===== MENU ATM ====="
+		DISPLAY "========================="
+        DISPLAY "===== ATM SEDERHANA ====="
+		DISPLAY "========================="
         DISPLAY "1. Cek Saldo"
         DISPLAY "2. Setor Uang"
         DISPLAY "3. Tarik Uang"
         DISPLAY "4. Keluar"
+		DISPLAY "========================="
         DISPLAY "Pilih menu: "
 
         INPUT pilihan
-
         SWITCH pilihan
 
-            CASE 1:
-                DISPLAY "Saldo saat ini: ", saldo
+            IF pilihan = "1" THEN
+            	DISPLAY "Saldo Anda: Rp ", saldo
+
+            ELSE IF pilihan = "2" THEN
+            	DISPLAY "Masukkan jumlah uang yang ingin disetor:"
+            	INPUT jumlah
+
+				IF jumlah > 0 THEN
+                	saldo ← saldo + jumlah
+                	DISPLAY "Setor uang berhasil."
+                	DISPLAY "Saldo Anda: Rp ", saldo
+				ELSE 
+					DISPLAY "Jumlah setoran harus lebih dari 0."
+				END IF
 
 
-            CASE 2:
-                DISPLAY "Masukkan jumlah uang yang ingin disetor: "
-                INPUT setor
+           	ELSE IF pilihan = "3" THEN
+				DISPLAY "Masukkan jumlah uang yang ingin ditarik : "
+				INPUT jumlah
 
-                saldo ← saldo awal + setor
+				IF jumlah > 0 AND jumlah <= saldo THEN
+                	saldo ← saldo - jumlah
+                	DISPLAY "Penarikan uang berhasil."
+                	DISPLAY "Sisa saldo Anda: Rp ", saldo
+				ELSE IF jumlah <=0 THEN
+					DISPLAY "Jumlah penarikan harus lebih dari 0."
+				ELSE
+                	DISPLAY "Saldo tidak mencukupi."
+            	END IF
 
-                DISPLAY "Setoran berhasil."
-                DISPLAY "Saldo saat ini: ", saldo
+			ELSE IF pilihan ="4' THEN
+				DISPLAY "Terima kasih telah menggunakan ATM Sederhana."
+				DISPLAY "Saldo akhir anda : Rp ", saldo
+			END IF
 
+			//Konfirmasi Lanjut Transaksi
+			IF pilihan !== "4" THEN
+				DISPLAY "Apakah Anda ingin melakukan transaksi lain? (Y/N)"
+				INPUT transaksi
+				transaksi <-- TO_UPPERCASE(transaksi)
 
-            CASE 3:
-                DISPLAY "Masukkan jumlah uang yang ingin ditarik: "
-                INPUT tarik
+				IF transaksi = "N" THEN
+					DISPLAY "Transaksi selesai."
+                	DISPLAY "Saldo akhir Anda: Rp ", saldo
+				END IF
+			END IF
 
-                IF tarik <= saldo awal THEN
-                    saldo ← saldo awal - tarik
-
-                    DISPLAY "Penarikan berhasil."
-                    DISPLAY "Saldo saat ini: ", saldo
-                ELSE
-                    DISPLAY "Saldo tidak mencukupi."
-                END IF
-
-
-            CASE 4:
-                DISPLAY "Transaksi selesai."
-                DISPLAY "Saldo akhir: ", saldo
-            DEFAULT:
-                DISPLAY "Pilihan tidak valid."
-        END SWITCH
-
-    UNTIL pilihan = 4
-    DISPLAY "Terima kasih telah menggunakan ATM."
+    UNTIL pilihan = "4" OR transaksi = "N"
 END
 	
 	
