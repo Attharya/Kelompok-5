@@ -6,12 +6,12 @@
 Pilih menu = 1
 
 **Expected Output:**
-"SALDO ANDA"
-“Rp 1.000.000”
+"Saldo Anda: Rp 1000000"
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Actual Output:**
-"SALDO ANDA"
-“Rp 1.000.000”
+"Saldo Anda: Rp 1000000"
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Status:** PASS
 
@@ -24,19 +24,18 @@ Pilih menu = 2
 Jumlah setoran = 800000
 
 **Expected Output:**
-“SETORAN BERHASIL”
-"Saldo diterima: Rp 800.000"
-“SALDO TERBARU Rp 1.800.000”
+"Setor uang berhasil."
+"Saldo Anda: Rp 1800000"
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Actual Output:**
-“SETORAN BERHASIL”
-"Saldo diterima: Rp 800.000"
-“SALDO TERBARU Rp 1.800.000”
+"Setor uang berhasil."
+"Saldo Anda: Rp 1800000"
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Status:** PASS
 
 ---
-
 
 ## Test Case 3
 
@@ -45,16 +44,14 @@ Pilih menu = 3
 Jumlah penarikan = 300000
 
 **Expected Output:**
-“PENARIKAN”
-"Harap menunggu...
- Uang sedang keluar."
-“Sisa saldo: Rp 1.500.000”
+"Penarikan uang berhasil."
+"Sisa Saldo Anda: Rp 1500000"
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Actual Output:**
-“PENARIKAN”
-"Harap menunggu...
- Uang sedang keluar."
-“Sisa saldo: Rp 1.500.000”
+"Penarikan uang berhasil."
+"Sisa Saldo Anda: Rp 1500000"
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Status:** PASS
 
@@ -67,12 +64,12 @@ Pilih menu = 3
 Jumlah penarikan = 2000000
 
 **Expected Output:**
-“Saldo tidak mencukupi!”
-"Saldo Anda: Rp 1.500.000"
+"Saldo tidak mencukupi."
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Actual Output:**
-“Saldo tidak mencukupi!”
-"Saldo Anda: Rp 1.500.000"
+"Saldo tidak mencukupi."
+“Terima kasih telah menggunakan layanan ATM Sederhana.”
 
 **Status:** PASS
 
@@ -85,10 +82,10 @@ Pilih menu = 2
 Jumlah setoran = 0
 
 **Expected Output:**
-“Jumlah setoran tidak valid!”
+"Jumlah setoran harus lebih dari 0."
 
 **Actual Output:**
-“Jumlah setoran tidak valid!”
+"Jumlah setoran harus lebih dari 0."
 
 **Status:** PASS
 
@@ -101,10 +98,10 @@ Pilih menu = 3
 Jumlah penarikan = 0
 
 **Expected Output:**
-“Jumlah penarikan tidak valid!”
+"Jumlah penarikan harus lebih dari 0."
 
 **Actual Output:**
-“Jumlah penarikan tidak valid!”
+"Jumlah penarikan harus lebih dari 0."
 
 **Status:** PASS
 
@@ -116,10 +113,10 @@ Jumlah penarikan = 0
 Pilih menu = 5
 
 **Expected Output:**
-“Pilihan tidak tersedia!”
+"Pilihan menu tidak valid."
 
 **Actual Output:**
-“Pilihan tidak tersedia!”
+"Pilihan menu tidak valid."
 
 **Status:** PASS
 
@@ -131,16 +128,9 @@ Pilih menu = 5
 Pilih menu = 4
 
 **Expected Output:**
-“TERIMA KASIH”
-"Saldo akhir Anda:"
-"Rp 1.500.000"
-“Silakan ambil kartu Anda.”
+"Terima kasih telah menggunakan ATM Sederhana."
 
 **Actual Output:**
-“TERIMA KASIH”
-"Saldo akhir Anda:"
-"Rp 1.500.000"
-“Silakan ambil kartu Anda.”
+"Terima kasih telah menggunakan ATM Sederhana."
 
-**Status:** PASS 
-
+**Status:** PASS
