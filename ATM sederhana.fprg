@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ATM sederhana"/>
+        <attribute name="authors" value="Priskila Georgina"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-21 06:42:27 PM"/>
+        <attribute name="created" value="UHJpc2tpbGEgR2VvcmdpbmE7TEFQVE9QLUM3OTkzSjhROzIwMjYtMDktMjE7MDU6MzA6MDkgUE07Mzk2NQ=="/>
+        <attribute name="edited" value="UHJpc2tpbGEgR2VvcmdpbmE7TEFQVE9QLUM3OTkzSjhROzIwMjYtMDktMjE7MDY6NDI6MjcgUE07MTs0MDc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilihan, jumlah, saldo" type="Integer" array="False" size=""/>
+            <declare name="lanjut" type="String" array="False" size=""/>
+            <assign variable="saldo" expression="1000000"/>
+            <assign variable="lanjut" expression="&quot;Y&quot;"/>
+            <while expression="lanjut == &quot;Y&quot; || lanjut == &quot;y&quot;">
+                <output expression="&quot;=== MENU ATM Sederhana ===&quot;" newline="True"/>
+                <output expression="&quot;1. Keluar/Selesai&quot;" newline="True"/>
+                <output expression="&quot;2. Cek Saldo&quot;" newline="True"/>
+                <output expression="&quot;3. Setor Tunai&quot;" newline="True"/>
+                <output expression="&quot;4. Penarikan Tunai&quot;" newline="True"/>
+                <output expression="&quot;Masukkan pilihan Anda (1-4)&quot;" newline="True"/>
+                <input variable="pilihan"/>
+                <if expression="pilihan == 4">
+                    <then>
+                        <output expression="&quot;Masukkan jumlah uang yang ingin ditarik:&quot;" newline="True"/>
+                        <input variable="jumlah"/>
+                        <if expression="jumlah &gt; 0 &amp;&amp; saldo &gt;= jumlah">
+                            <then>
+                                <assign variable="saldo" expression="saldo - jumlah"/>
+                                <output expression="&quot;Penarikan berhasil! Sisa saldo Anda saat ini: Rp &quot; &amp; saldo" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Transaksi gagal! Saldo tidak mencukupi atau jumlah tidak valid.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;Apakah Anda ingin melakukan transaksi lain? (Y/T):&quot;" newline="True"/>
+                        <input variable="lanjut"/>
+                    </then>
+                    <else>
+                        <if expression="pilihan == 3">
+                            <then>
+                                <output expression="&quot;Masukkan jumlah setor tunai:&quot;" newline="True"/>
+                                <input variable="jumlah"/>
+                                <if expression="jumlah &gt; 0">
+                                    <then>
+                                        <assign variable="saldo" expression="saldo + jumlah"/>
+                                        <output expression="&quot;Setor tunai berhasil! Saldo Anda: Rp&quot; &amp; saldo" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Jumlah setor tidak valid!&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="pilihan == 2">
+                                    <then>
+                                        <output expression="&quot;Jumlah saldo rekening Anda saat ini adalah: Rp &quot; &amp; saldo" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="pilihan == 1">
+                                            <then>
+                                                <assign variable="lanjut" expression="&quot;T&quot;"/>
+                                                <output expression="&quot;Terima kasih telah menggunakan ATM kami.&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Pilihan menu tidak valid&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Apakah Anda ingin melakukan transaksi lain? (Y/T):&quot;" newline="True"/>
+                <input variable="lanjut"/>
+            </while>
+            <output expression="&quot;Program ATM Selesai.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
