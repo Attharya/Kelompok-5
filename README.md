@@ -24,7 +24,9 @@ Kelompok 5
 ---
 
 ## 4. Objectives
+
 This project is designed to apply the following programming concepts:
+
 - **Language:** JavaScript (Browser / ECMAScript environment)
 - **Built-in Functions:** `prompt()` and `alert()`, JavaScript's built-in browser functions for input and output. These are not custom-written functions, so they do not conflict with the "no function" rule in the assignment instructions.
 - **Variables & Scope:** State management using dynamic variable assignment (`let saldo`, `let pilihan`, `let jumlah`, `let transaksi`)
@@ -37,15 +39,15 @@ This project is designed to apply the following programming concepts:
   - Logical: `&&` to combine multiple conditions in one check
 - **Control Flow & Conditional Statements:**
   - `do...while` loop for continuous interactive menu execution, repeating while the user has not chosen to exit and answers "Y" to continue
-  - `if / else if / else` conditional statements for menu routing and input validation
+  - `if / else if / else` conditional statements for menu routing, and for validating that deposit/withdrawal amounts are greater than 0 and that withdrawals do not exceed the current balance
 ---
 
 ## 5. Input
 The program receives:
 - **Menu Selection:** Option `1`, `2`, `3`, or `4` chosen by the user via `prompt()`.
-- **Setoran (Deposit):** A value entered when Option `2` is chosen, added to the balance if greater than 0.
-- **Penarikan (Withdrawal):** A value entered when Option `3` is chosen, deducted from the balance if greater than 0 and not more than the current balance.
-- **Lanjut Transaksi (Continue):** A `Y`/`N` answer asked after every transaction (except Option `4`), converted to uppercase before being checked.
+- **Setoran (Deposit):** A value entered when Option `2` is chosen, e.g. `800000`, added to the balance if greater than 0.
+- **Penarikan (Withdrawal):** A value entered when Option `3` is chosen, e.g. `300000`, deducted from the balance if greater than 0 and not more than the current balance.
+- **Lanjut Transaksi (Continue):** A `Y`/`N` answer asked after every transaction (except Option `4`), converted to uppercase before being checked. Answering `N` also ends the session, the same as choosing Option `4`.
 
 > **Note:** amounts of `0` or below are rejected for both deposit and withdrawal. Text instead of a number is also rejected, since it fails the "greater than 0" check.
 ---
