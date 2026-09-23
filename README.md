@@ -98,7 +98,7 @@ The algorithm used in the program is described in:
 
 The flowchart is created using Flowgorithm:
 
-[ATM Sederhana.fprg](ATM%20Sederhana.fprg)
+[ATM Sederhana.fprg](ATM Sederhana.fprg)
 
 ---
 
