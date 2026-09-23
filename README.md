@@ -87,23 +87,33 @@ The program displays:
 ---
 
 ## 8. Algorithm
+
 The algorithm used in the program is described in:
 
-[pseucode.txt](pseucode.txt])
----
-## 9. Flowchart
-The flowchart is created using Flowgorithm.
+[pseudocode.txt](pseudocode.txt)
 
-[ATM sederhana.fprg] (ATM sederhana.fprg)
 ---
+
+## 9. Flowchart
+
+The flowchart is created using Flowgorithm:
+
+[ATM Sederhana.fprg](ATM%20Sederhana.fprg)
+
+---
+
 ## 10. JavaScript Implementation
+
 The JavaScript implementation of the program is available in:
 
+[program.js](program.js)
 
-[program.js](program.js) 
 ---
-## 11. Testing
-The program is tested using several test scenarios.
-Testing documentation:
-[test-cases.md](test-cases.md)
 
+## 11. Testing
+
+The program is tested using several test scenarios.
+
+Testing documentation:
+
+[test-cases.md](test-cases.md)
