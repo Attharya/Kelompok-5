@@ -98,7 +98,7 @@ The flowchart is created using Flowgorithm.
 ---
 ## 10. JavaScript Implementation
 The JavaScript implementation of the program is available in:
-javascript: 
+[program.js] (program.js)
 
 [program.js](program.js) 
 ---
