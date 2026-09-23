@@ -16,7 +16,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 2
 
@@ -37,7 +37,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 3
 
@@ -58,7 +58,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 4
 
@@ -77,7 +77,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 5
 
@@ -94,7 +94,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 6
 
@@ -111,7 +111,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 7
 
@@ -127,7 +127,7 @@ Transaksi lain = Y
 
 **Status:** PASS
 
-***
+---
 
 ## Test Case 8
 
