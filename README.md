@@ -17,7 +17,7 @@ Kelompok 5
 ## 2. Project Title
 - SIMPLE ATM SIMULATOR
 ---
-![Demo Running ATM])
+![![Uploading copyImage.gif…]()])
 
 ## 3. Project Description
 - This program is a simple ATM simulator in which the user can check their balance, deposit money, withdraw money, and exit the program. 
