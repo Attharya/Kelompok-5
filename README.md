@@ -17,7 +17,7 @@ Kelompok 5
 ## 2. Project Title
 - SIMPLE ATM SIMULATOR
 ---
-![Demo Running ATM](https://github.com/Attharya/Kelompok-5/blob/5fa5649720652f0ba2b5d93127cf3144bbb35aa6/gif%20file.gif)
+![Demo Running ATM])
 
 ## 3. Project Description
 - This program is a simple ATM simulator in which the user can check their balance, deposit money, withdraw money, and exit the program. 
